@@ -274,13 +274,13 @@ plotResponseSurface <- function(data, fitResult = NULL,
           zTransform(zGrid), add = TRUE, col = zcol, alpha = 0.6,
           lit = FALSE, aspect = FALSE, lwd = 2)
 
-  bgplot3d({
-    plot.new()
-    title(main = main)
-
-    if (legend && is.character(labels))
-      legend("topleft", legend = labels, pch = 16, cex = 1.5, col = surfaceColors)
-  })
+  # bgplot3d({
+  #   plot.new()
+  #   title(main = main)
+  # 
+  #   if (legend && is.character(labels))
+  #     legend("topleft", legend = labels, pch = 16, cex = 1.5, col = surfaceColors)
+  # })
 
 
   if (!add){
